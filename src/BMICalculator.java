@@ -55,4 +55,3 @@ public class BMICalculator {
         }
     }
 }
-//what would happen is remove scanner in new scanner
