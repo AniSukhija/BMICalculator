@@ -1,6 +1,6 @@
 /**
- * Asks user for height(in) and weight(lb) and then converts to meters and kiograms and returns user's BMI
- * @author Ona
+ * Converts and calculates user's BMI based on height and weight
+ * @author 23sukhija
  * @version 11/16/22
  */
 
@@ -14,10 +14,10 @@ public class BMICalculator {
      * @param pounds user's weight in pounds
      * @return User's BMI weigh(kg)/height(m)^2 double
      */
-    public static double computeBMI(int inches, int pounds) throws NumberFormatException {
+    public static double computeBMI(int inches, int pounds) {
         double kgs, meters;
         if(inches <= 0 || pounds <= 0)
-            throw new NumberFormatException("I like turtles");
+            return 0.;
         meters = inches * 0.0254;
         kgs = pounds * 0.454;
         return kgs / Math.pow(meters, 2);
